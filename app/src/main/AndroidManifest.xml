@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.inventive.grocery_partner">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="my.inventive.grocery_partner.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="my.inventive.grocery_partner.RegisterActivity"/>
+        <activity android:name="my.inventive.grocery_partner.AllItemListActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.UpdateActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.UpdateItemDataActivity"
+            android:parentActivityName="my.inventive.grocery_partner.UpdateActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.DeleteActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.DeleteItemDataActivity"
+            android:parentActivityName="my.inventive.grocery_partner.DeleteActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.SearchActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.SearchActivityData"
+            android:parentActivityName="my.inventive.grocery_partner.SearchActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.OrderActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.OrderItemsActivity"
+            android:parentActivityName="my.inventive.grocery_partner.OrderActivity"
+            />
+        <activity android:name="my.inventive.grocery_partner.LoginActivity"/>
+        <activity android:name="my.inventive.grocery_partner.HomeActivity"/>
+        <activity android:name="my.inventive.grocery_partner.AddItemActivity"
+            android:parentActivityName="my.inventive.grocery_partner.HomeActivity"
+            />
+        <activity android:name=".WaitingActivity"/>
+    </application>
+
+</manifest>
