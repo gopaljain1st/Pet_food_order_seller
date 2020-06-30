@@ -12,7 +12,7 @@
         android:textSize="22sp"
         android:text="No Orders To Display"
         android:gravity="center"
-        android:textColor="#800"
+        android:textColor="@color/colorPrimary"
         android:visibility="gone"
         android:layout_centerInParent="true"
         />

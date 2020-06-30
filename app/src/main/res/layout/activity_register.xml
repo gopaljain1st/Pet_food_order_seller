@@ -14,7 +14,7 @@
         android:gravity="center|top"
         android:paddingTop="13sp"
         android:text="Welcome"
-        android:textColor="#800"
+        android:textColor="@color/colorPrimary"
         android:textSize="23dp"
         android:textStyle="bold" />
 
@@ -219,7 +219,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Have an Account? "
-                android:textColor="#800"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
             <TextView
@@ -229,7 +229,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Login"
-                android:textColor="#800"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
